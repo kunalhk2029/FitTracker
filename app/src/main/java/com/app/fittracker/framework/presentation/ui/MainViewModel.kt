@@ -17,7 +17,6 @@ class MainViewModel @Inject constructor(
 
     private val runsSortedByDate = mainRepository.getAllRunsSortedByDate()
     private val runsSortedByDistance = mainRepository.getAllRunsSortedByDistance()
-    private val runsSortedByCaloriesBurned = mainRepository.getAllRunsSortedByCaloriesBurned()
     private val runsSortedByTimeInMillis = mainRepository.getAllRunsSortedByTimeInMillis()
     private val runsSortedByAvgSpeed = mainRepository.getAllRunsSortedByAvgSpeed()
 
@@ -36,11 +35,7 @@ class MainViewModel @Inject constructor(
                 result?.let { runs.value = it }
             }
         }
-        runs.addSource(runsSortedByCaloriesBurned) { result ->
-            if(sortType == SortType.CALORIES_BURNED) {
-                result?.let { runs.value = it }
-            }
-        }
+
         runs.addSource(runsSortedByDistance) { result ->
             if(sortType == SortType.DISTANCE) {
                 result?.let { runs.value = it }
@@ -58,7 +53,6 @@ class MainViewModel @Inject constructor(
         SortType.RUNNING_TIME -> runsSortedByTimeInMillis.value?.let { runs.value = it }
         SortType.AVG_SPEED -> runsSortedByAvgSpeed.value?.let { runs.value = it }
         SortType.DISTANCE -> runsSortedByDistance.value?.let { runs.value = it }
-        SortType.CALORIES_BURNED -> runsSortedByCaloriesBurned.value?.let { runs.value = it }
     }.also {
         this.sortType = sortType
     }

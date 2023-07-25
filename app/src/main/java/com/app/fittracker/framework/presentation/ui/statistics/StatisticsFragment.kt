@@ -22,7 +22,7 @@ import kotlin.math.round
 @AndroidEntryPoint
 class StatisticsFragment : Fragment(R.layout.fragment_statistics) {
 
-    var binding:FragmentStatisticsBinding?=null
+    var binding: FragmentStatisticsBinding?=null
 
     private val viewModel: StatisticsViewModel by viewModels()
 
@@ -79,12 +79,7 @@ class StatisticsFragment : Fragment(R.layout.fragment_statistics) {
                 tvAverageSpeed.text = avgSpeedString
             }
         })
-        viewModel.totalCaloriesBurned.observe(viewLifecycleOwner, Observer {
-            it?.let {
-                val totalCalories = "${it}kcal"
-                tvTotalCalories.text = totalCalories
-            }
-        })
+
         viewModel.runsSortedByDate.observe(viewLifecycleOwner, Observer {
             it?.let {
                 val allAvgSpeeds = it.indices.map { i -> BarEntry(i.toFloat(), it[i].avgSpeedInKMH) }
@@ -104,18 +99,3 @@ class StatisticsFragment : Fragment(R.layout.fragment_statistics) {
         binding=null
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

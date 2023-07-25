@@ -45,8 +45,5 @@ class CustomMarkerView(
         tvDistance.text = distanceInKm
 
         tvDuration.text = TrackingUtility.getFormattedStopWatchTime(run.timeInMillis)
-
-        val caloriesBurned = "${run.caloriesBurned}kcal"
-        tvCaloriesBurned.text = caloriesBurned
     }
 }

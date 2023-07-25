@@ -42,15 +42,6 @@
             android:text="DISTANCE"
             android:textSize="20sp"
             android:gravity="center"/>
-
-        <TextView
-            android:id="@+id/tvCaloriesBurned"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="CALORIES BURNED"
-            android:textSize="20sp"
-            android:gravity="center"/>
-
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>
