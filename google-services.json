@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "76635099872",
+    "project_id": "distancetracker-cd84b",
+    "storage_bucket": "distancetracker-cd84b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:76635099872:android:6e8b3a0625224e1903b685",
+        "android_client_info": {
+          "package_name": "com.app.fittracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "76635099872-vvnea9dfqkhotvpacmn67rfb422c59qb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRMHXuccaAns3bmctThkVar11Bc7nQ0UA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "76635099872-vvnea9dfqkhotvpacmn67rfb422c59qb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:76635099872:android:08f21facc33105f703b685",
+        "android_client_info": {
+          "package_name": "com.example.distancetracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "76635099872-u40lueotpvo9fovcgkorus2bj9uthr38.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.distancetracker",
+            "certificate_hash": "637f1990543033e67c0e1b98b055b9f39c11feeb"
+          }
+        },
+        {
+          "client_id": "76635099872-vvnea9dfqkhotvpacmn67rfb422c59qb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRMHXuccaAns3bmctThkVar11Bc7nQ0UA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "76635099872-vvnea9dfqkhotvpacmn67rfb422c59qb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

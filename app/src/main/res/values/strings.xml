@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FitTracker</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCRMHXuccaAns3bmctThkVar11Bc7nQ0UA</string>
+
+    <string-array name="filter_options">
+    <item>Date</item>
+    <item>Running Time</item>
+    <item>Distance</item>
+    <item>Average Speed</item>
+    <item>Calories Burned</item>
+    </string-array>
+</resources>
